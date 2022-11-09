@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addressVeiw" type="id" />
+    <item name="nameView" type="id" />
+</resources>

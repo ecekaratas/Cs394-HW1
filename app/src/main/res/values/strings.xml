@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Homework 1</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="hobby">Hobby</string>
+    <string name="mail">Mail</string>
+
+    <string-array name="name_array">
+        <item><u><b><i>Can Sevgican</i></b></u></item>
+        <item><u><b><i>İrem Savman</i></b></u></item>
+        <item><u><b><i>Nihan Orakdöğen</i></b></u></item>
+        <item><u><b><i>Ecem Yenici</i></b></u></item>
+        <item><u><b><i>Onur Sertgil</i></b></u></item>
+        <item><u><b><i>Barış Çömlek</i></b></u></item>
+        <item><u><b><i>Kayra Coşkun</i></b></u></item>
+        <item><u><b><i>Pınar Sahillioğlu</i></b></u></item>
+        <item><u><b><i>Ecem Arpacı</i></b></u></item>
+        <item><u><b><i>Mustafa Oğuz Aksoy</i></b></u></item>
+    </string-array>
+    <string-array name="address_array">
+        <item>Bursa</item>
+        <item>Gaziantep</item>
+        <item>Edirne</item>
+        <item>Giresun</item>
+        <item>İstanbul</item>
+        <item>Konya</item>
+        <item>Antalya</item>
+        <item>Hatay</item>
+        <item>Sivas</item>
+        <item>Çanakkale</item>
+    </string-array>
+    <string-array name="profiledesc_array">
+        <item>He is studying Computer Science at Ozyegin University\nand this is his 2nd year.</item>
+        <item>She is studying Architecture at Ozyegin University\nand this is her 2nd year.</item>
+        <item>She is studying Medicine at Cerrahpasa University\nand this is her 3rd year.</item>
+        <item>She is studying Medicine at Bezmi-Alem University\nand this is her 3rd year.</item>
+        <item>He is studying Electronics and Communication\nat Istanbul Technical University and this is his 2nd year.</item>
+        <item>He is studying Mechanical Engineering and doing\nEconomy double major and this is his 3r year.</item>
+        <item>She is studying Electronics and Communication\nat Istanbul Technical University and this is her 3rd year.</item>
+        <item>She is studying Medicine at Bahçeşehir University\nand this is her 3rd year.</item>
+        <item>She is studying at Educational Sciences at Boğaziçi\nUniversity and this is her 3rd year.</item>
+        <item>He is studying Electronics and Communication at\nIstanbul Technical University and this is his 3rd year.</item>
+    </string-array>
+    <string-array name="age_array">
+        <item>23.12.2002</item>
+        <item>10.04.2003</item>
+        <item>31.10.2002</item>
+        <item>13.04.2002</item>
+        <item>23.04.2003</item>
+        <item>03.04.2002</item>
+        <item>16.02.2002</item>
+        <item>14.08.2002</item>
+        <item>01.06.2002</item>
+        <item>28.08.2002</item>
+    </string-array>
+    <string-array name="hobby_array">
+        <item><u><b><i>Creating video games and playing chess</i></b></u></item>
+        <item><u><b><i>Playing valorant and making architectural projects</i></b></u></item>
+        <item><u><b><i>Drawing pictures and making pottery </i></b></u></item>
+        <item><u><b><i>Reading books and playing LOL </i></b></u></item>
+        <item><u><b><i>Doing projects with electronic devices and playing drums </i></b></u></item>
+        <item><u><b><i>Going to gym and watching movies</i></b></u></item>
+        <item><u><b><i>Watching documentries and doing research</i></b></u></item>
+        <item><u><b><i>Reading english books and watching TV series</i></b></u></item>
+        <item><u><b><i>Listening music and playing basketball</i></b></u></item>
+        <item><u><b><i>Playing GO and reading comics</i></b></u></item>
+    </string-array>
+    <string-array name="mail_array">
+        <item><u><b><i>can.sevgican@ozu.edu.tr</i></b></u></item>
+        <item><u><b><i>irem.savman@ozu.edu.tr</i></b></u></item>
+        <item><u><b><i>nihan.orakdogen@ctf.edu.tr</i></b></u></item>
+        <item><u><b><i>ecemyenici518@gmail.com </i></b></u></item>
+        <item><u><b><i>onur.sertgil21@itu.edu.tr</i></b></u></item>
+        <item><u><b><i>baris.comlek@ku.edu.tr</i></b></u></item>
+        <item><u><b><i>kayra.coşkun20@itu.edu.tr</i></b></u></item>
+        <item><u><b><i>pinar.sahillioglu@bau.edu.tr</i></b></u></item>
+        <item><u><b><i>ecem.arpacı@boun.edu.tr</i></b></u></item>
+        <item><u><b><i>mustafa.aksoy20@itu.edu.tr</i></b></u></item>
+    </string-array>
+
+    <string-array name="image_array">
+        <item><u><b><i>can.sevgican@ozu.edu.tr</i></b></u></item>
+        <item><u><b><i>irem.savman@ozu.edu.tr</i></b></u></item>
+        <item><u><b><i>nihan.orakdogen@ctf.edu.tr</i></b></u></item>
+        <item><u><b><i>ecemyenici518@gmail.com </i></b></u></item>
+        <item><u><b><i>onur.sertgil21@itu.edu.tr</i></b></u></item>
+        <item><u><b><i>baris.comlek@ku.edu.tr</i></b></u></item>
+        <item><u><b><i>kayra.coşkun20@itu.edu.tr</i></b></u></item>
+        <item><u><b><i>pinar.sahillioglu@bau.edu.tr</i></b></u></item>
+        <item><u><b><i>ecem.arpacı@boun.edu.tr</i></b></u></item>
+        <item><u><b><i>mustafa.aksoy20@itu.edu.tr</i></b></u></item>
+    </string-array>
+</resources>
