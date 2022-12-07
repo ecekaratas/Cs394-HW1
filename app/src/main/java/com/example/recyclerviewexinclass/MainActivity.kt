@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val users = DataSource(this).loadUsers()
+        val companys = DataSource(this).loadCompanys()
 
         val rv :RecyclerView = findViewById(R.id.recyclerView)
-        rv.adapter = ItemAdapter(users)
+        rv.adapter = ItemAdapter(companys)
         rv.setHasFixedSize(true)
     }
 

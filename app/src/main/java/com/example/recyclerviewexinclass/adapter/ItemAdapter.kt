@@ -7,39 +7,36 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewexinclass.R
-import com.example.recyclerviewexinclass.UserDetailActivity
-import com.example.recyclerviewexinclass.data.model.User
+import com.example.recyclerviewexinclass.CompanyDetailActivity
+import com.example.recyclerviewexinclass.data.model.Company
 
-class ItemAdapter ( private val dataset : List<User>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     class ItemViewHolder(val view: View): RecyclerView.ViewHolder(view) {
-        val nameView= view.findViewById<TextView>(R.id.nameView)
-        val addrView= view.findViewById<TextView>(R.id.addressView)
-        val ageView= view.findViewById<TextView>(R.id.ageView)
-        val hobbyView= view.findViewById<TextView>(R.id.hobbyView)
-        val mailView= view.findViewById<TextView>(R.id.mailView)
-        //val imageView= view.findViewById<TextView>(R.id.imageView)
+        val restaurantsView = view.findViewById<TextView>(R.id.restaurantsView)
+        val menuuView = view.findViewById<TextView>(R.id.menuuView)
+        val priceView = view.findViewById<TextView>(R.id.priceView)
 
-        lateinit var user: User
+
+        lateinit var company: Company
 
         init {
             view.setOnClickListener{
                 //
-                val showDetailIntent = Intent(itemView.context, UserDetailActivity::class.java)
-                showDetailIntent.putExtra(USER_KEY, user)
+                val showDetailIntent = Intent(itemView.context, CompanyDetailActivity::class.java)
+                showDetailIntent.putExtra(COMPANY_KEY, company)
                 itemView.context.startActivity(showDetailIntent)
             }
         }
 
         companion object{
-            private val USER_KEY = "USER"
+            private val COMPANY_KEY = "COMPANY"
         }
-        fun bind(user: User){
-            this.user = user
-            nameView.text = user.name
-            addrView.text = user.address
-            ageView.text = user.age
-            hobbyView.text = user.hobby
-            //imageView.text = user.image
+        fun bind(company: Company){
+            this.company = company
+            restaurantsView.text = company.restaurant
+            menuuView.text = company.menuu
+            priceView.text = company.price
+
         }
     }
 
@@ -51,8 +48,8 @@ class ItemAdapter ( private val dataset : List<User>): RecyclerView.Adapter<Item
     override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
         val user = dataset[position]
         //holder.imageView.setImageResource(item.imageResourceId)
-//        holder.nameView.text = user.name
-//        holder.addrView.text = user.address
+//        holder.nameView.text = company.name
+//        holder.addrView.text = company.address
 
         holder.bind(user)
 

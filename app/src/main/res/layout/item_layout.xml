@@ -6,12 +6,12 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/nameView"
+        android:id="@+id/restaurantsView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:text="Name"
+        android:text="Restaurant"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,49 +20,27 @@
         />
 
     <TextView
-        android:id="@+id/addressView"
+        android:id="@+id/menuuView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="4dp"
-        android:text="Address"
+        android:text="Menu"
+        android:textSize="0sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameView" />
+        app:layout_constraintTop_toBottomOf="@id/restaurantsView" />
 
     <TextView
-        android:id="@+id/ageView"
+        android:id="@+id/priceView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="Age"
+        android:text="Price"
         android:textSize="0sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/addressView" />
+        app:layout_constraintTop_toBottomOf="@id/menuuView" />
 
-    <TextView
-        android:id="@+id/hobbyView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="10dp"
-        android:text="Age"
-        android:textSize="0sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ageView" />
-
-    <TextView
-        android:id="@+id/mailView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="10dp"
-        android:text="Mail"
-        android:textSize="0sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hobbyView" />
 
 
 
