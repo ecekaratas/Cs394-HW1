@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val companys = DataSource(this).loadCompanys()
 
         val rv :RecyclerView = findViewById(R.id.recyclerView)
+
         rv.adapter = ItemAdapter(companys)
         rv.setHasFixedSize(true)
         val actionBar: ActionBar?
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         if (actionBar != null) {
             actionBar.setBackgroundDrawable(colorDrawable)
         }
+
+        rv.adapter = ItemAdapter(users)
+        rv.setHasFixedSize(true)//
+
     }
 
 }
