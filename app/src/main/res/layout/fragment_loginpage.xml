@@ -23,8 +23,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
-            android:layout_width="188dp"
-            android:layout_height="60dp"
+            android:layout_width="217dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="64dp"
+
             app:hintTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +36,12 @@
             app:layout_constraintVertical_bias="0.447">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="188dp"
-                android:layout_height="60dp"
+                android:layout_width="217dp"
+                android:layout_height="48dp"
+
                 android:background="@color/purple"
                 android:hint="UserName"
-
                 android:textColorHint="@color/white" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -48,6 +49,8 @@
             android:layout_width="217dp"
             android:layout_height="48dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@color/purple"
             android:minHeight="48dp"
             android:text="Login"
@@ -62,6 +65,7 @@
             android:id="@+id/sign_up"
             android:layout_width="217dp"
             android:layout_height="48dp"
+            android:layout_marginTop="16dp"
             android:background="@color/purple"
             android:minHeight="48dp"
             android:text="Sign Up"
@@ -70,12 +74,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.859" />
+            app:layout_constraintVertical_bias="0.881" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout2"
-            android:layout_width="188dp"
-            android:layout_height="60dp"
+            android:layout_width="217dp"
+            android:layout_height="48dp"
+
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
             android:background="@color/purple"
             app:hintTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -86,8 +93,8 @@
             app:layout_constraintVertical_bias="0.567">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="188dp"
-                android:layout_height="60dp"
+                android:layout_width="217dp"
+                android:layout_height="48dp"
                 android:background="@color/purple"
                 android:hint="Password"
 
@@ -102,8 +109,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496"
             app:srcCompat="@drawable/whatsapp_image_2022_10_19_at_2_18_43_pm_removebg_preview" />
 
 

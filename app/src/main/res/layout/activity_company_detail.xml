@@ -22,10 +22,10 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="60dp"
+            android:paddingTop="24dp"
             android:text="@{company.restaurant}"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:paddingTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,10 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="24dp"
             android:text="@{company.menuu}"
             android:textColor="#ffffff"
-            android:paddingTop="24dp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
             app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
 
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="272dp"
             android:layout_marginTop="24dp"
+            android:lineSpacingMultiplier="1.2"
             android:paddingTop="24dp"
             android:text="@{company.price}"
             android:textColor="#ffffff"
