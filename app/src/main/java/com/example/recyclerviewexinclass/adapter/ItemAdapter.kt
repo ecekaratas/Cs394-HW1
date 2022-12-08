@@ -50,9 +50,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
 
     override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
         val company = dataset[position]
-        //holder.imageView.setImageResource(item.imageResourceId)
        holder.restaurantsView.text = company.restaurant
-//        holder.addrView.text = company.address
 
         holder.bind(company)
 

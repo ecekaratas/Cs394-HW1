@@ -38,6 +38,7 @@
                 android:layout_height="60dp"
                 android:background="@color/purple"
                 android:hint="UserName"
+
                 android:textColorHint="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -89,6 +90,7 @@
                 android:layout_height="60dp"
                 android:background="@color/purple"
                 android:hint="Password"
+
                 android:textColorHint="#F8BBD0"
                 app:hintTextColor="@color/white" />
 

@@ -20,7 +20,6 @@ class LoginPageFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        //val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.item_layout, container, false)
         val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.fragment_loginpage, container, false)
 
 

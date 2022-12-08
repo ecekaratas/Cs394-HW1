@@ -43,7 +43,6 @@ class DataSource (val context: Context ) {
         for (i in 0..7){
 
             val company = Company(restaurantsList[i], menuuList[i], priceList[i], getUserImages2()[i])
-            //println(restaurantsList[i] + "sa" + getUserImages() + "as" + arrayname[i])
             companies.add(company)
         }
         return companies
