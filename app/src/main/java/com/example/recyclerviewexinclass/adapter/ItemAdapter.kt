@@ -38,7 +38,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
             menuuView.text = company.menuu
             priceView.text = company.price
 
-            imageView.image = company.images
+            imageView.setImageResource(company.image)
 
         }
     }
