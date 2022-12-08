@@ -38,7 +38,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
             menuuView.text = company.menuu
             priceView.text = company.price
 
-            //imageView. = company.images
+            imageView.image = company.images
 
         }
     }
@@ -49,12 +49,12 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
     }
 
     override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
-        val user = dataset[position]
+        val company = dataset[position]
         //holder.imageView.setImageResource(item.imageResourceId)
-//        holder.nameView.text = company.name
+       holder.restaurantsView.text = company.restaurant
 //        holder.addrView.text = company.address
 
-        holder.bind(user)
+        holder.bind(company)
 
     }
 

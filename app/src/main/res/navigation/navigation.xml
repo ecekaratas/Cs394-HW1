@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/mainMenuFragment">
+    app:startDestination="@id/loginPageFragment">
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="com.example.recyclerviewexinclass.LoginPageFragment"
+        android:name="com.example.recyclerviewexinclass.MainMenuFragment"
         android:label="MainMenuFragment"
-        tools:layout="@layout/fragment_loginpage" />
+        tools:layout="@layout/fragment_mainmenu"/>
     <fragment
         android:id="@+id/loginPageFragment"
-        android:name="com.example.recyclerviewexinclass.TitleFragement"
+        android:name="com.example.recyclerviewexinclass.LoginPageFragment"
         android:label="LoginPageFragment"
-        tools:layout="@layout/item_layout">
+        tools:layout="@layout/fragment_loginpage">
         <action
             android:id="@+id/action_loginPageFragment_to_mainMenuFragment"
             app:destination="@id/mainMenuFragment" />
@@ -24,5 +24,4 @@
             android:name="password"
             app:argType="string" />
     </fragment>
-
 </navigation>

@@ -21,6 +21,12 @@ class DataSource (val context: Context ) {
         return context.resources.getIntArray(R.array.image_array)
 
     }
+    fun getUserImages2(): Array<Int> {
+        val images = arrayOf<Int> (R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob,
+            R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
+        return images;
+
+    }
 
 
     fun loadCompanys() : List<Company>{
@@ -29,18 +35,21 @@ class DataSource (val context: Context ) {
         val priceList = getUserPrice()
         val imageList = getUserImages()
 
-        val arrayname = arrayOf(R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
+        val arrayname = arrayOf(R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob,
+            R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
+
 
         var companies = mutableListOf<Company>()
 
         for (i in 0..7){
 
-            val company = Company(restaurantsList[i], menuuList[i], priceList[i], arrayname[i])
-            println("sa" + getUserImages() + "as" + arrayname[i])
+            val company = Company(restaurantsList[i], menuuList[i], priceList[i], getUserImages2()[i])
+            println(restaurantsList[i] + "sa" + getUserImages() + "as" + arrayname[i])
             companies.add(company)
         }
         return companies
     }
 }
+
 
 
