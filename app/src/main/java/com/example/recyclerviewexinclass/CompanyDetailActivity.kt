@@ -17,6 +17,9 @@ class CompanyDetailActivity : AppCompatActivity() {
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.hide();
         }
+        lateinit var company: Company
+
+
     }
 
 }

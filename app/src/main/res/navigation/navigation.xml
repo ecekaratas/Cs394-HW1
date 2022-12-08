@@ -5,23 +5,23 @@
     android:id="@+id/navigation"
     app:startDestination="@id/loginPageFragment">
     <fragment
-        android:id="@+id/mainMenuFragment"
-        android:name="com.example.recyclerviewexinclass.MainMenuFragment"
-        android:label="MainMenuFragment"
-        tools:layout="@layout/fragment_mainmenu"/>
-    <fragment
         android:id="@+id/loginPageFragment"
         android:name="com.example.recyclerviewexinclass.LoginPageFragment"
         android:label="LoginPageFragment"
         tools:layout="@layout/fragment_loginpage">
-        <action
-            android:id="@+id/action_loginPageFragment_to_mainMenuFragment"
-            app:destination="@id/mainMenuFragment" />
         <argument
             android:name="userName"
             app:argType="string" />
         <argument
             android:name="password"
             app:argType="string" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_itemLayoutFragment"
+            app:destination="@id/itemLayoutFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/itemLayoutFragment"
+        android:name="com.example.recyclerviewexinclass.ItemLayoutFragment"
+        android:label="ItemLayoutFragment"
+        tools:layout="@layout/item_layout"/>
 </navigation>

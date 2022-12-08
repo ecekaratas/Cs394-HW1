@@ -22,7 +22,7 @@ class DataSource (val context: Context ) {
 
     }
     fun getUserImages2(): Array<Int> {
-        val images = arrayOf<Int> (R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob,
+        val images = arrayOf<Int> (R.drawable.user, R.drawable.snob, R.drawable.snob, R.drawable.snob,
             R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
         return images;
 
