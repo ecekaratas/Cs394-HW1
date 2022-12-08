@@ -22,8 +22,8 @@ class DataSource (val context: Context ) {
 
     }
     fun getUserImages2(): Array<Int> {
-        val images = arrayOf<Int> (R.drawable.harvest, R.drawable.snob, R.drawable.snob, R.drawable.snob,
-            R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
+        val images = arrayOf<Int> (R.drawable.snob, R.drawable.hotslice, R.drawable.manakin, R.drawable.lokal,
+        R.drawable.hv, R.drawable.subway, R.drawable.dane, R.drawable.rumeli)
         return images;
 
     }
@@ -35,8 +35,7 @@ class DataSource (val context: Context ) {
         val priceList = getUserPrice()
         val imageList = getUserImages()
 
-        val arrayname = arrayOf(R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.snob,
-            R.drawable.snob, R.drawable.snob, R.drawable.snob, R.drawable.harvest)
+
 
 
         var companies = mutableListOf<Company>()

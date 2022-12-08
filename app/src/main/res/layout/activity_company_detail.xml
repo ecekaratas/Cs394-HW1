@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CompanyDetailActivity"
-        android:background="@color/purple">
+        android:background="#104D89">
 
         <TextView
             android:id="@+id/companyRestaurantView"
@@ -21,10 +21,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="60dp"
             android:text="@{company.restaurant}"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:textStyle="bold"
+            android:paddingTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,9 +35,11 @@
             android:id="@+id/companyMenuuView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
             android:text="@{company.menuu}"
+            android:textColor="#ffffff"
+            android:paddingTop="24dp"
             app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
             app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
 
@@ -44,25 +47,14 @@
             android:id="@+id/companyPriceView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="24dp"
+            android:paddingTop="24dp"
             android:text="@{company.price}"
-            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
             app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="141dp"
-            android:layout_height="159dp"
-            android:src="@{company.image}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.805"
-            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
