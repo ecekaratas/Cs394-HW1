@@ -3,6 +3,7 @@
     <string name="restaurants">Restaurants</string>
     <string name="menuu">Menu</string>
     <string name="price">Price</string>
+    <integer-array name="image">Image</integer-array>
 
 
     <string-array name="restaurants_array">
@@ -39,4 +40,14 @@
 
     </string-array>
 
+    <integer-array name="image_array">
+        <item>@drawable/harvest</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+        <item>@drawable/snob</item>
+    </integer-array>
 </resources>

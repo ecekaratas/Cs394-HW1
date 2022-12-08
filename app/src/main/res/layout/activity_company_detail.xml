@@ -61,6 +61,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@color/teal_200"/>
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{company.images}"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

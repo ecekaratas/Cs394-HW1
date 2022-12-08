@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewexinclass.R
@@ -15,7 +16,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
         val restaurantsView = view.findViewById<TextView>(R.id.restaurantsView)
         val menuuView = view.findViewById<TextView>(R.id.menuuView)
         val priceView = view.findViewById<TextView>(R.id.priceView)
-
+        val imageView = view.findViewById<ImageView>(R.id.imageView)
 
         lateinit var company: Company
 
@@ -36,6 +37,8 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
             restaurantsView.text = company.restaurant
             menuuView.text = company.menuu
             priceView.text = company.price
+
+            //imageView. = company.images
 
         }
     }
