@@ -34,7 +34,7 @@ class DataSource (val context: Context ) {
         var companies = mutableListOf<Company>()
 
         for (i in 0..7){
-           
+
             val company = Company(restaurantsList[i], menuuList[i], priceList[i], arrayname[i])
             println("sa" + getUserImages() + "as" + arrayname[i])
             companies.add(company)
