@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         val companys = DataSource(this).loadCompanys()
 
+        /*if (getSupportActionBar() != null) {
+            getSupportActionBar()?.hide();
+        }*/
+
         val rv :RecyclerView = findViewById(R.id.recyclerView)
         rv.adapter = ItemAdapter(companys)
         rv.setHasFixedSize(true)

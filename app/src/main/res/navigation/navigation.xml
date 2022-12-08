@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.recyclerviewexinclass.LoginPageFragment"
+        android:label="MainMenuFragment"
+        tools:layout="@layout/fragment_loginpage" />
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.example.recyclerviewexinclass.TitleFragement"
+        android:label="LoginPageFragment"
+        tools:layout="@layout/item_layout">
+        <action
+            android:id="@+id/action_loginPageFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

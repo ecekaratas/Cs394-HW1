@@ -13,5 +13,10 @@ class CompanyDetailActivity : AppCompatActivity() {
         val binding : ActivityCompanyDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_company_detail)
         val selectedCompany = intent.getSerializableExtra("COMPANY") as Company
         binding.company = selectedCompany
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar()?.hide();
+        }
     }
+
 }
