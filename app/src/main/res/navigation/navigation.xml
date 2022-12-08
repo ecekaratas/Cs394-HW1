@@ -17,11 +17,16 @@
             app:argType="string" />
         <action
             android:id="@+id/action_loginPageFragment_to_itemLayoutFragment"
-            app:destination="@id/itemLayoutFragment" />
+            app:destination="@id/itemLayoutFragment"
+            app:popUpTo="@id/loginPageFragment" />
     </fragment>
     <fragment
         android:id="@+id/itemLayoutFragment"
         android:name="com.example.recyclerviewexinclass.ItemLayoutFragment"
         android:label="ItemLayoutFragment"
-        tools:layout="@layout/item_layout"/>
+        tools:layout="@layout/item_layout">
+        <action
+            android:id="@+id/action_itemLayoutFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+    </fragment>
 </navigation>
