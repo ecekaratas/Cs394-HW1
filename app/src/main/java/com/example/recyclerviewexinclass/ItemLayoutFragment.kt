@@ -17,7 +17,7 @@ class ItemLayoutFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.activity_main, container, false)
+        val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.item_layout, container, false)
 
         return binding.root
     }
