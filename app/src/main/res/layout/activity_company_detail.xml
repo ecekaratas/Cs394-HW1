@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="company"
+            type="com.example.recyclerviewexinclass.data.model.Company" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CompanyDetailActivity"
+        android:background="#104D89">
+
+        <TextView
+            android:id="@+id/companyRestaurantView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:paddingTop="24dp"
+            android:text="@{company.restaurant}"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/companyMenuuView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="24dp"
+            android:text="@{company.menuu}"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
+            app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
+
+        <TextView
+            android:id="@+id/companyPriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="24dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="24dp"
+            android:text="@{company.price}"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
+            app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

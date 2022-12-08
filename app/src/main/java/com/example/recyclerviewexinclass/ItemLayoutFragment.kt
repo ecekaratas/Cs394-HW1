@@ -6,15 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.recyclerviewexinclass.databinding.TitleFragmentBinding
+import com.example.recyclerviewexinclass.R
+import com.example.recyclerviewexinclass.databinding.FragmentLoginpageBinding
 
-class TitleFragement: Fragment() {
+
+class ItemLayoutFragment : Fragment(){
     override fun onCreateView(
+
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<TitleFragmentBinding>(inflater, R.layout.title_fragment,container, false)
+
+
+        val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.item_layout, container, false)
 
         return binding.root
     }
