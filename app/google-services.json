@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245990057317",
+    "firebase_url": "https://ozu-menu-default-rtdb.firebaseio.com",
+    "project_id": "ozu-menu",
+    "storage_bucket": "ozu-menu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245990057317:android:9b3d16313d9561a320ed8c",
+        "android_client_info": {
+          "package_name": "com.example.recyclerviewexinclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245990057317-fguaouf31rjc1k87tv49rmek7tbrcvut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7D-u_XOKZCu1xT3-bWbnfrsZ12YFBNU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245990057317-fguaouf31rjc1k87tv49rmek7tbrcvut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
