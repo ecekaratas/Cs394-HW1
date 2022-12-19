@@ -33,6 +33,11 @@ class LoginPageFragment: Fragment() {
             view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToItemLayoutFragment())
         }
 
+        binding.signup.setOnClickListener { view: View ->
+
+            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToSignUpActivity())//action_loginPageFragment_to_signUpActivity
+        }
+
         return binding.root
     }
 
