@@ -42,10 +42,12 @@ class RegisterActivity : AppCompatActivity() {
         //Şifrenin aynı olduğunu kontrol için fonksiyon tanımlıyoruz.
 
         btn_Kayit.setOnClickListener {
+
             if(et_Mail.text.isNotEmpty() && et_Sifre.text.isNotEmpty() && et_Sifre_Tekrar.text.isNotEmpty()){
                 if (et_Sifre.text.toString().equals(et_Sifre_Tekrar.text.toString())){
 
                     kullaniciKayit(et_Mail.text.toString(), et_Sifre.text.toString())
+
 
                 }else{
                     Toast.makeText(this,"Şifreler aynı değil", Toast.LENGTH_SHORT).show()

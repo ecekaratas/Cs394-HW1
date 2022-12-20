@@ -2,21 +2,20 @@ package com.example.recyclerviewexinclass
 
 //package com.example.firebaseauth
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-//import kotlinx.android.synthetic.main.activity_login.*
-
 
 class LoginActivity : AppCompatActivity() {
 
@@ -41,11 +40,20 @@ class LoginActivity : AppCompatActivity() {
 
             var intent=Intent(this,RegisterActivity::class.java)
             startActivity(intent)
+            /*var intent=Intent(this,ItemLayoutFragment::class.java)
+            startActivity(intent)*/
         }
         //Giriş butonunun işlevi için fonksiyon tanımlıyoruz.
 
         btn_Giris.setOnClickListener {
 
+            var intent=Intent(this,BlankActivity2::class.java)
+            startActivity(intent)
+
+            /*val navController = findNavController(R.id.loginActivity)
+            navController.navigateUp() // to clear previous navigation history
+            navController.navigate(R.id.itemLayoutFragment)
+*/
             if (et_Mail.text.isNotEmpty() && et_Sifre.text.isNotEmpty()){
 
                 progressBarGoster()
@@ -56,14 +64,32 @@ class LoginActivity : AppCompatActivity() {
 
                     .addOnCompleteListener(object:OnCompleteListener<AuthResult>{
 
+
                         // Kullanıcı başarılı giriş yaptığında bildirim oluşturuyoruz.
 
                         override fun onComplete(p0: Task<AuthResult>) {
 
                             if(p0.isSuccessful){
+
                                 progressBarGizle()
-                                //  Toast.makeText(this@LoginActivity,"Başarılı Giriş: "+FirebaseAuth.getInstance().currentUser?.email, Toast.LENGTH_SHORT).show()
+
+                                Toast.makeText(this@LoginActivity,"Başarılı Giriş: "+FirebaseAuth.getInstance().currentUser?.email, Toast.LENGTH_SHORT).show()
+
+                                fun alert(context: Context, text: String) {
+                                    val intent = Intent(context, ItemLayoutFragment::class.java)
+                                    intent.putExtra("text", text)
+                                    context.startActivity(intent)
+                                }
+/*
+                                val navController = findNavController(R.id.loginPageFragment)
+                                navController.navigateUp() // to clear previous navigation history
+                                navController.navigate(R.id.itemLayoutFragment)*/
+
                                 FirebaseAuth.getInstance().signOut()
+
+
+                                /*var intent=Intent(this,ItemLayoutFragment::class.java)
+                                startActivity(intent)*/
 
                             }else{
 
@@ -73,6 +99,7 @@ class LoginActivity : AppCompatActivity() {
                                 Toast.makeText(this@LoginActivity,"Hatalı Giriş: "+p0.exception?.message, Toast.LENGTH_SHORT).show()
                             }
                         }
+
                     })
 
             }else{
@@ -102,20 +129,20 @@ class LoginActivity : AppCompatActivity() {
             override fun onAuthStateChanged(p0: FirebaseAuth) {
                 var kullanici=p0.currentUser
 
-                if (kullanici != null){
+                /*if (kullanici != null){
 
-                    if(kullanici.isEmailVerified){
+                   if(kullanici.isEmailVerified){
                         Toast.makeText(this@LoginActivity,"Mail onaylandı giriş yapabilirsiniz", Toast.LENGTH_SHORT).show()
                         var intent=Intent(this@LoginActivity,MainActivity::class.java)
                         startActivity(intent)
                         finish()
 
                     }else{
-                        Toast.makeText(this@LoginActivity,"Mail adresinizi onaylamadan giriş yapamazsınız", Toast.LENGTH_SHORT).show()
+                      Toast.makeText(this@LoginActivity,"Mail adresinizi onaylamadan giriş yapamazsınız", Toast.LENGTH_SHORT).show()
 
 
                     }
-                }
+                }*/
             }
         }
     }

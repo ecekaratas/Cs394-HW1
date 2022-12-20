@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import com.example.recyclerviewexinclass.databinding.FragmentLoginpageBinding
 
 
 class LoginPageFragment: Fragment() {
+
 
     override fun onCreateView(
 
@@ -30,12 +30,18 @@ class LoginPageFragment: Fragment() {
             val password = binding.textInputLayout2.editText?.text.toString()
 
             //view.findNavController().navigate(R.id.navigation)
-            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToItemLayoutFragment())
+
+            //view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToItemLayoutFragment())
+            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToLoginActivity())
+            //action_loginPageFragment_to_loginActivity
+            //action_loginPageFragment_to_itemLayoutFragment
         }
 
         binding.signup.setOnClickListener { view: View ->
 
-            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToSignUpActivity())//action_loginPageFragment_to_signUpActivity
+            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToRegisterActivity())
+        //action_loginPageFragment_to_signUpActivity
+            //action_loginPageFragment_to_registerActivity
         }
 
         return binding.root

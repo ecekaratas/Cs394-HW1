@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/registerActivity">
+    app:startDestination="@id/loginPageFragment">
     <fragment
         android:id="@+id/loginPageFragment"
         android:name="com.example.recyclerviewexinclass.LoginPageFragment"
@@ -15,18 +15,17 @@
             android:name="password"
             app:argType="string" />
         <action
-            android:id="@+id/action_loginPageFragment_to_itemLayoutFragment"
-            app:destination="@id/itemLayoutFragment"
-            app:popUpTo="@id/loginPageFragment" />
+            android:id="@+id/action_loginPageFragment_to_registerActivity"
+            app:destination="@id/registerActivity" />
         <action
-            android:id="@+id/action_loginPageFragment_to_signUpActivity"
-            app:destination="@id/signUpActivity" />
+            android:id="@+id/action_loginPageFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/itemLayoutFragment"
         android:name="com.example.recyclerviewexinclass.BlankFragment"
         android:label="ItemLayoutFragment"
-        tools:layout="@layout/fragment_blank">
+        tools:layout="@layout/fragment_blank" >
         <action
             android:id="@+id/action_itemLayoutFragment_to_loginPageFragment"
             app:destination="@id/loginPageFragment" />
@@ -45,5 +44,6 @@
         android:id="@+id/loginActivity"
         android:name="com.example.recyclerviewexinclass.LoginActivity"
         android:label="activity_login"
+        app:destination="@id/itemLayoutFragment"
         tools:layout="@layout/activity_login" />
 </navigation>
