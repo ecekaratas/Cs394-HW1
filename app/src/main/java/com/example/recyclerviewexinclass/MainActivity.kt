@@ -12,13 +12,13 @@ import com.example.recyclerviewexinclass.data.model.Users
 
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val companys = DataSource(this).loadCompanys()
 
-        val rv :RecyclerView = findViewById(R.id.recyclerView)
+        val rv: RecyclerView = findViewById(R.id.recyclerView)
 
         rv.adapter = ItemAdapter(companys)
         rv.setHasFixedSize(true)
@@ -45,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         //rv.adapter = ItemAdapter(users)
         rv.setHasFixedSize(true)//
 
-    }
+    }*/
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
+
+    }
 }

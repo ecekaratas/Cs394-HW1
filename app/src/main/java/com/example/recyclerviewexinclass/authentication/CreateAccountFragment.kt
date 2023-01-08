@@ -42,6 +42,7 @@ class CreateAccountFragment: Fragment() {
             var email = binding.textinputEmail.editText?.text.toString()
             var pw = binding.textinputPw.editText?.text.toString()
             createAccount(email, pw, name)
+
         }
 
         // Initialize Firebase Auth

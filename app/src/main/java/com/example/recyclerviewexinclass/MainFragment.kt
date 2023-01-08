@@ -29,7 +29,7 @@ class MainFragment:Fragment() {
         }
         binding.devam.setOnClickListener {
             this.findNavController().navigate(R.id.action_mainFragment_to_itemLayoutFragment)
-
+            //fragmentManager?.popBackStack()
         }
         return binding.root
     }

@@ -36,6 +36,8 @@
             app:destination="@id/emailPasswordFragment" />
         <action
             android:id="@+id/action_mainFragment_to_itemLayoutFragment"
-            app:destination="@id/itemLayoutFragment" />
+            app:destination="@id/itemLayoutFragment"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>
