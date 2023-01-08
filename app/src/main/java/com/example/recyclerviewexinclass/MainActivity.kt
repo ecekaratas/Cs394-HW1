@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewexinclass.adapter.ItemAdapter
 import com.example.recyclerviewexinclass.data.DataSource
+import com.example.recyclerviewexinclass.data.model.Users
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +41,8 @@ class MainActivity : AppCompatActivity() {
             actionBar.setBackgroundDrawable(colorDrawable)
         }
 
-        rv.adapter = ItemAdapter(users)
+
+        //rv.adapter = ItemAdapter(users)
         rv.setHasFixedSize(true)//
 
     }

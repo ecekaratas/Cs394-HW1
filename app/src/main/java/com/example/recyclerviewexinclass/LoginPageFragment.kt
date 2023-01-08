@@ -30,13 +30,13 @@ class LoginPageFragment: Fragment() {
             val password = binding.textInputLayout2.editText?.text.toString()
 
             //view.findNavController().navigate(R.id.navigation)
-            view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToItemLayoutFragment())
+           /// view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToItemLayoutFragment())
         }
 
-        binding.signup.setOnClickListener { view: View ->
+       /* binding.signup.setOnClickListener { view: View ->
 
             view.findNavController().navigate(LoginPageFragmentDirections.actionLoginPageFragmentToSignUpActivity())//action_loginPageFragment_to_signUpActivity
-        }
+        }*/
 
         return binding.root
     }
