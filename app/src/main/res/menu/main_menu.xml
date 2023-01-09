@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    xmlns:All4One="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item1"
-        android:title="Profile" />
+        android:id="@+id/algo"
+        android:icon="@drawable/iicon"
+        android:title="nose"
+        All4One:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/WIFI"
+            android:icon="@drawable/profile"
+            android:title="Profile"/>
 
-    <item
-        android:id="@+id/item2"
-        android:title="Sign Out" />
+        <item
+            android:id="@+id/DATOS"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
 
-    <item
-        android:id="@+id/item3"
-        android:title="Settings" />
+        <item
+            android:id="@+id/BT"
+            android:icon="@drawable/out"
+            android:title="Sign Out"/>
 
-    <item
-        android:id="@+id/item4"
-        android:title="Help" />
 
-</menu>
+    </menu>
+</item>
+    </menu>

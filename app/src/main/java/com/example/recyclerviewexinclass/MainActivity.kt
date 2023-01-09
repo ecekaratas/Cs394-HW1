@@ -2,10 +2,9 @@ package com.example.recyclerviewexinclass
 
 //import android.R
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.widget.Toolbar
+
 
 class MainActivity : AppCompatActivity() {
     /*override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,6 +59,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
+        // return true so that the menu pop up is opened
         return true
     }
 }
