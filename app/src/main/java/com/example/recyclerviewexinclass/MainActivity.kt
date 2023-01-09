@@ -1,15 +1,11 @@
 package com.example.recyclerviewexinclass
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
+//import android.R
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerviewexinclass.adapter.ItemAdapter
-import com.example.recyclerviewexinclass.data.DataSource
-import com.example.recyclerviewexinclass.data.model.Users
-
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
     /*override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,5 +47,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+    }
+    /*
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setActionBar(toolbar)
+    }*/
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
     }
 }

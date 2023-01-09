@@ -2,6 +2,7 @@ package com.example.recyclerviewexinclass
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.databinding.DataBindingUtil
 import com.example.recyclerviewexinclass.data.model.Company
 import com.example.recyclerviewexinclass.databinding.ActivityCompanyDetailBinding
@@ -21,5 +22,6 @@ class CompanyDetailActivity : AppCompatActivity() {
 
 
     }
+
 
 }
