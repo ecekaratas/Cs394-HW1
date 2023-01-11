@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.recyclerviewexinclass.databinding.FragmentMainScreenBinding
 
 
-class MainFragment:Fragment() {
+class SettingsFragment:Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -18,18 +18,11 @@ class MainFragment:Fragment() {
     ): View? {
         val  binding : FragmentMainScreenBinding
                 = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_main_screen, container, false)
+            inflater, R.layout.settings, container, false)
 
-        binding.seeListBtn.setOnClickListener {
-            this.findNavController().navigate(R.id.action_mainFragment_to_emailPasswordFragment)
-        }
-        binding.signUpBtn.setOnClickListener {
-            this.findNavController().navigate(R.id.action_mainFragment_to_createAccountFragment)
-
-        }
-        binding.devam.setOnClickListener {
-            this.findNavController().navigate(R.id.action_mainFragment_to_itemLayoutFragment)
-            //fragmentManager?.popBackStack()
+        binding.
+        seeListBtn.setOnClickListener {
+            this.findNavController().navigate(R.id.action_mainFragment_to_settingsFragment)
         }
 
         return binding.root

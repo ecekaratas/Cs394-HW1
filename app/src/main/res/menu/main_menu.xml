@@ -8,17 +8,17 @@
         All4One:showAsAction="always">
     <menu>
         <item
-            android:id="@+id/WIFI"
+            android:id="@+id/profile"
             android:icon="@drawable/profile"
             android:title="Profile"/>
 
         <item
-            android:id="@+id/DATOS"
+            android:id="@+id/settings"
             android:icon="@drawable/settings"
             android:title="Settings"/>
 
         <item
-            android:id="@+id/BT"
+            android:id="@+id/sign_out"
             android:icon="@drawable/out"
             android:title="Sign Out"/>
 
