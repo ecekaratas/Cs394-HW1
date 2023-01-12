@@ -15,8 +15,9 @@
         <item><u><b><i>Subway</i></b></u></item>
         <item><u><b><i>Dane Yayık</i></b></u></item>
         <item><u><b><i>Rumeli Town</i></b></u></item>
-
     </string-array>
+
+
     <string-array name="menuu_array">
         <item>Classic Burger Menu\nBenji Burger Menu\nTruffle Burger Menu\nZinger Rock Burger Menu\nSnob Burger Menu\nBao Burger Menu\nSeasoned French Fries\nParmesan French Fries</item>
         <item>Pesto Margherita Large\nAkdeniz Large\nCalifornia Large\nChicken BBQ Large\nChicken BBQ Large\nEge Large\nTrakya Large\nAmsterdam Large\nHawaii Large\nMiami Large\nBerlin Large\nSüper Karışık Large\nIbiza Large\nHot Slice Special Large\nMadness Large</item>

@@ -7,6 +7,7 @@
     android:background="#104D89">
 
 
+
     <TextView
         android:id="@+id/restaurantsView"
         android:layout_width="wrap_content"

@@ -3,7 +3,7 @@
     xmlns:All4One="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/algo"
-        android:icon="@drawable/iicon"
+        android:icon="@drawable/hamburger"
         android:title="nose"
         All4One:showAsAction="always">
     <menu>
@@ -15,7 +15,8 @@
         <item
             android:id="@+id/settings"
             android:icon="@drawable/settings"
-            android:title="Settings"/>
+            android:title="Settings"
+            android:onClick="onOptionsItemSelected"/>
 
         <item
             android:id="@+id/sign_out"
