@@ -36,22 +36,22 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.settings -> {
-                //Toast.makeText(this,"You clicked me",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Settings",Toast.LENGTH_LONG).show()
                 setContentView(R.layout.settings)
                 return true
             }
+            R.id.sign_out -> {
+                Toast.makeText(this,"You clicked me",Toast.LENGTH_LONG).show()
+                setContentView(R.layout.fragment_main_screen)
+                return true
+            }
             R.id.profile -> {
-                //Toast.makeText(this,"You clicked me",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Profile",Toast.LENGTH_LONG).show()
                 setContentView(R.layout.profile)
                 return true
             }
-            R.id.sign_out -> {
-                //Toast.makeText(this,"You clicked me",Toast.LENGTH_LONG).show()
-                setContentView(R.layout.activity_main)
-                return true
-            }else->super.onOptionsItemSelected(item)
+            else->super.onOptionsItemSelected(item)
         }
-
 
     }
     /*
