@@ -59,6 +59,20 @@
             app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
             app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
 
+        <TextView
+            android:id="@+id/favView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="504dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="24dp"
+            android:text="@{company.fav}"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
+            app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

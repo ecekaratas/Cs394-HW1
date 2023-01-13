@@ -3,6 +3,7 @@
     <string name="restaurants">Restaurants</string>
     <string name="menuu">Menu</string>
     <string name="price">Price</string>
+    <string name="fav">Fav</string>
     <integer-array name="image">Image</integer-array>
 
 
@@ -39,6 +40,17 @@
         <item>50.00 TL\n55.00 TL\n45.00 TL</item>
         <item>65.00 TL\n70.00 TL\n80.00 TL\n60.00 TL\n75.00 TL\n40.00 TL\n20.00 TL\n70.00 TL\n60.00 TL</item>
 
+    </string-array>
+
+    <string-array name="fav_array">
+        <item><u><b><i>Snob</i></b></u></item>
+        <item><u><b><i>Hot Slice</i></b></u></item>
+        <item><u><b><i>Manakin</i></b></u></item>
+        <item><u><b><i>Lokal</i></b></u></item>
+        <item><u><b><i>Harvest</i></b></u></item>
+        <item><u><b><i>Subway</i></b></u></item>
+        <item><u><b><i>Dane Yayık</i></b></u></item>
+        <item><u><b><i>Rumeli Town</i></b></u></item>
     </string-array>
 
     <integer-array name="image_array">

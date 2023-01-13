@@ -17,6 +17,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
         val menuuView = view.findViewById<TextView>(R.id.menuuView)
         val priceView = view.findViewById<TextView>(R.id.priceView)
         val imageView = view.findViewById<ImageView>(R.id.imageView)
+        val favView = view.findViewById<TextView>(R.id.favView)
 
         lateinit var company: Company
 
@@ -37,6 +38,7 @@ class ItemAdapter ( private val dataset : List<Company>): RecyclerView.Adapter<I
             restaurantsView.text = company.restaurant
             menuuView.text = company.menuu
             priceView.text = company.price
+            favView.text = company.fav
 
             imageView.setImageResource(company.image)
 

@@ -16,6 +16,10 @@ class DataSource (val context: Context ) {
         return context.resources.getStringArray(R.array.price_array)
 
     }
+    fun getUserFav(): Array<String>{
+        return context.resources.getStringArray(R.array.fav_array)
+
+    }
 
     fun getUserImages(): IntArray {
         return context.resources.getIntArray(R.array.image_array)
@@ -33,6 +37,7 @@ class DataSource (val context: Context ) {
         val restaurantsList = getUserrestaurants()
         val menuuList = getUserMenuu()
         val priceList = getUserPrice()
+        val favList = getUserFav()
         val imageList = getUserImages()
 
 
@@ -42,7 +47,7 @@ class DataSource (val context: Context ) {
 
         for (i in 0..7){
 
-            val company = Company(restaurantsList[i], menuuList[i], priceList[i], getUserImages2()[i])
+            val company = Company(restaurantsList[i], menuuList[i], priceList[i], getUserImages2()[i], getUserFav()[i])
             companies.add(company)
         }
         return companies
