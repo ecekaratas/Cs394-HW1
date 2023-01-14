@@ -8,6 +8,9 @@
         <variable
             name="company"
             type="com.example.recyclerviewexinclass.data.model.Company" />
+        <variable
+            name="comment"
+            type="com.example.recyclerviewexinclass.database.Comment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,19 +62,21 @@
             app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
             app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
 
-        <TextView
-            android:id="@+id/favView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="504dp"
-            android:lineSpacingMultiplier="1.2"
-            android:paddingTop="24dp"
-            android:text="@{company.fav}"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/companyRestaurantView"
-            app:layout_constraintTop_toBottomOf="@+id/companyRestaurantView" />
+        <Button
+            android:id="@+id/comments"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/lila"
+            android:text="Comments"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.944" />
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
