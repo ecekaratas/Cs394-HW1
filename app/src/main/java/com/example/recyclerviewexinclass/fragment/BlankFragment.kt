@@ -1,19 +1,17 @@
-package com.example.recyclerviewexinclass
+package com.example.recyclerviewexinclass.fragment
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewexinclass.adapter.ItemAdapter
 import com.example.recyclerviewexinclass.data.DataSource
-import com.example.recyclerviewexinclass.data.model.Users
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import com.example.recyclerviewexinclass.R
 import com.example.recyclerviewexinclass.databinding.FragmentBlankBinding
-import com.example.recyclerviewexinclass.databinding.FragmentMainScreenBinding
 
 class BlankFragment : Fragment() {
     override fun onCreateView(

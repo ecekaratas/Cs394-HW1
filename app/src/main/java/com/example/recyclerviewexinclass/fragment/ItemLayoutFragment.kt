@@ -1,4 +1,4 @@
-package com.example.recyclerviewexinclass
+package com.example.recyclerviewexinclass.fragment
 
 import android.os.Bundle
 import android.util.Log

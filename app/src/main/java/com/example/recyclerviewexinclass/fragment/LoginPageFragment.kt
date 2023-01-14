@@ -1,4 +1,4 @@
-package com.example.recyclerviewexinclass
+package com.example.recyclerviewexinclass.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.findNavController
+import com.example.recyclerviewexinclass.R
 import com.example.recyclerviewexinclass.databinding.FragmentLoginpageBinding
 
 
@@ -20,7 +19,8 @@ class LoginPageFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater, R.layout.fragment_loginpage, container, false)
+        val binding = DataBindingUtil.inflate<FragmentLoginpageBinding>(inflater,
+            R.layout.fragment_loginpage, container, false)
 
 
 

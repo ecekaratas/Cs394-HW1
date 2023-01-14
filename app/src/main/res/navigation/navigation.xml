@@ -5,7 +5,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/itemLayoutFragment"
-        android:name="com.example.recyclerviewexinclass.BlankFragment"
+        android:name="com.example.recyclerviewexinclass.fragment.BlankFragment"
         android:label="ItemLayoutFragment"
         tools:layout="@layout/fragment_blank">
         <action
@@ -46,14 +46,7 @@
             app:destination="@id/itemLayoutFragment"
             app:launchSingleTop="false"
             app:popUpToInclusive="false" />
-        <action
-            android:id="@+id/action_mainFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.recyclerviewexinclass.SettingsFragment"
-        android:label="SettingsFragment" />
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.recyclerviewexinclass.database.AddFragment"
