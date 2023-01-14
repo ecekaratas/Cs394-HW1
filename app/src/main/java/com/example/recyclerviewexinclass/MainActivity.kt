@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val binding : FragmentMainScreenBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         return when(item.itemId){
             R.id.settings -> {
                 Toast.makeText(this,"Settings",Toast.LENGTH_LONG).show()

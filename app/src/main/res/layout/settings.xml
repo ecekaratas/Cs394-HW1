@@ -52,21 +52,14 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="phone number"
-        android:textColor="@color/white"
-        android:textSize="10sp"
-        android:layout_gravity="center" />
 
     <LinearLayout
-        android:background="@drawable/round_back_white10_20"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="77dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white10_20"
         android:orientation="vertical"
         android:padding="15dp">
 
@@ -77,15 +70,19 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
                 app:srcCompat="@drawable/nightmode" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_toEndOf="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@id/imageView5"
                 android:text="Night Mode"
                 android:textColor="#FFFFFFFF"
                 android:textStyle="bold" />
@@ -108,7 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/round_back_white10_20"
         android:orientation="vertical"
