@@ -34,9 +34,11 @@ class ListFragment : Fragment() {
 
         // UserViewModel
         mCommentViewModel = ViewModelProvider(this).get(CommentViewModel::class.java)
-        mCommentViewModel.readAllData.observe(viewLifecycleOwner, Observer { comment ->
-            adapter.setData(comment)
-        })
+        mCommentViewModel.readAllData.observe(viewLifecycleOwner, Observer {it?.let {
+            adapter.submitList(it)
+        }})
+
+        
 
         view.floatingActionButton.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_addFragment)

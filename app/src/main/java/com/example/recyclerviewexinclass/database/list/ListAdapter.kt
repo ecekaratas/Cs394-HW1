@@ -1,21 +1,19 @@
 package com.example.recyclerviewexinclass.database.list
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 //import android.widget.ListAdapter
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerviewexinclass.R
 import com.example.recyclerviewexinclass.database.Comment
 import com.example.recyclerviewexinclass.databinding.CustomRowBinding
-import com.example.recyclerviewexinclass.databinding.FragmentListBinding
-import com.example.recyclerviewexinclass.databinding.FragmentListBindingImpl
-import kotlinx.android.synthetic.main.custom_row.view.*
+//import kotlinx.android.synthetic.main.custom_row.view.*
 
 
-class ListAdapter: ListAdapter<Comment, ListAdapter.MyViewHolder>(MyListDiffCallBack()){
+class ListAdapter: ListAdapter<Comment, com.example.recyclerviewexinclass.database.list.ListAdapter.MyViewHolder>(MyListDiffCallBack()){
 
     class MyViewHolder(val binding: CustomRowBinding): RecyclerView.ViewHolder(binding.root) {
 
@@ -31,16 +29,19 @@ class ListAdapter: ListAdapter<Comment, ListAdapter.MyViewHolder>(MyListDiffCall
         fun bind(comment: Comment){
             commentUID.text = comment.uid.toString()
             binding.comment = comment
-        }}
+        }
+    }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder{
             return MyViewHolder.from(parent)
         }
-        override fun onCreateViewHolder(holder: MyViewHolder, position: Int){
+        override fun onBindViewHolder(holder: MyViewHolder, position: Int){
             val currentItem = getItem(position)
             holder.bind(currentItem)
         }
-    }
+
+
+}
 
     class MyListDiffCallBack : DiffUtil.ItemCallback<Comment>(){
         override fun areItemsTheSame(oldItem: Comment, newItem: Comment): Boolean {
@@ -50,7 +51,6 @@ class ListAdapter: ListAdapter<Comment, ListAdapter.MyViewHolder>(MyListDiffCall
         override fun areContentsTheSame(oldItem: Comment, newItem: Comment): Boolean {
             return oldItem == newItem
         }
-    }
 }
 /*
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
