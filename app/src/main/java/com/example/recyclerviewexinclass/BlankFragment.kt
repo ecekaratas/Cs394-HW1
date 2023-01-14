@@ -26,9 +26,9 @@ class BlankFragment : Fragment() {
                 = DataBindingUtil.inflate(
             inflater, R.layout.fragment_blank, container, false)
 
-        /*binding.buttonComment.setOnClickListener {
+        binding.buttonComment.setOnClickListener {
             this.findNavController().navigate(R.id.action_itemLayoutFragment_to_listFragment)
-        }*/
+        }
         return binding.root
         //return inflater.inflate(R.layout.fragment_blank, container, false)
     }
