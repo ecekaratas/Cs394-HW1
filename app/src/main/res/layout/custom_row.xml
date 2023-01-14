@@ -20,7 +20,7 @@
     android:padding="24sp">
 
     <TextView
-        android:id="@+id/uid_txt"
+        android:id="@+id/commentUID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
