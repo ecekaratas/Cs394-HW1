@@ -72,4 +72,5 @@
             android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment" />
     </fragment>
+
 </navigation>

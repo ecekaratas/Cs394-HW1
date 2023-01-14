@@ -101,6 +101,19 @@
         </RelativeLayout>
 
         <!-- Notifications -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="vertical"
+        android:padding="15dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -133,8 +146,8 @@
                 android:theme="@style/notificationsSwitch"
                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
         </RelativeLayout>
-
     </LinearLayout>
+
     <LinearLayout
         android:background="@drawable/round_back_white10_20"
         android:layout_width="match_parent"
