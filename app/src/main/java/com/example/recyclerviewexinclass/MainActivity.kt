@@ -18,6 +18,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.recyclerviewexinclass.authentication.CreateAccountFragment
 import com.example.recyclerviewexinclass.databinding.ActivityCompanyDetailBinding
+import com.example.recyclerviewexinclass.databinding.FragmentMainScreenBinding
+import com.example.recyclerviewexinclass.databinding.FragmentMainScreenBindingImpl
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val binding : ActivityCompanyDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        val binding : FragmentMainScreenBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         return when(item.itemId){
             R.id.settings -> {
                 Toast.makeText(this,"Settings",Toast.LENGTH_LONG).show()
