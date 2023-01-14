@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,168 +31,151 @@
 
 
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone number"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:background="@drawable/round_back_white10_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--Dark Mode / Night Mode -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/user"/>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:srcCompat="@drawable/nightmode" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="User Name"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="phone number"
-            android:textColor="@color/white"
-            android:textSize="10sp"
-            android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:text="Night Mode"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/round_back_secondary_100"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
-            android:text="Edit Profile"
-            android:textAllCaps="false"
-            android:textColor="@color/dark_blue" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="50dp"
+                android:theme="@style/nightModeSwitch"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:background="@drawable/round_back_white10_20"
+        <!-- Notifications -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical"
-            android:padding="15dp">
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp">
 
-            <!--Dark Mode / Night Mode -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/notifications" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:id="@+id/dark"
-                    android:layout_height="40dp"
-                    android:background="@drawable/round_back_night_mode"
-                    android:src="@drawable/out"
-                    android:padding="12dp"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:text="Notifications"
+                android:textColor="#FBFBFB"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Night Mode"
-                    android:textColor="#FFFFFFFF"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/dark"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="50dp"
+                android:theme="@style/notificationsSwitch"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </RelativeLayout>
 
-                <androidx.appcompat.widget.SwitchCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:switchMinWidth="50dp"
-                    android:theme="@style/nightModeSwitch"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/round_back_white10_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="15dp">
 
-            <!-- Notifications -->
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="47dp">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:id="@+id/notificationIcon"
-                    android:layout_height="40dp"
-                    android:background="@drawable/dark"
-                    android:src="@drawable/round_back_notifications"
-                    android:padding="12dp"/>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/securityicon" />
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Notifications"
-                    android:textColor="#FFFFFFFF"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/notificationIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:text="Security/Privacy "
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
 
-                <androidx.appcompat.widget.SwitchCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:switchMinWidth="50dp"
-                    android:theme="@style/notificationsSwitch"
-                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-            </RelativeLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:background="@drawable/round_back_white10_20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:padding="15dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:id="@+id/securityIcon"
-                    android:layout_height="40dp"
-                    android:background="@drawable/dark"
-                    android:src="@drawable/round_back_security"
-                    android:padding="12dp"/>
-
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Security/Privacy "
-                    android:textColor="#FFFFFFFF"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/securityIcon"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/right_arrow_icon"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    />
-            </RelativeLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow_icon" />
+        </RelativeLayout>
 
 
 
-        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.recyclerviewexinclass
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -11,6 +12,7 @@ import com.example.recyclerviewexinclass.databinding.ActivityCompanyDetailBindin
 import kotlinx.android.synthetic.main.activity_company_detail.*
 
 class CompanyDetailActivity : AppCompatActivity() {
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_user_detail)
@@ -23,9 +25,15 @@ class CompanyDetailActivity : AppCompatActivity() {
         }
         lateinit var company: Company
 
-
+        /*binding.comments.setOnClickListener {
+            setContentView(R.layout.fragment_add)
+            //fragmentManager?.popBackStack()
+        }*/
 
     }
+
+
+
 
 
 }

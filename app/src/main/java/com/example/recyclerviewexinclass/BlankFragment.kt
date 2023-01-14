@@ -10,6 +10,10 @@ import com.example.recyclerviewexinclass.data.model.Users
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
+import com.example.recyclerviewexinclass.databinding.FragmentBlankBinding
+import com.example.recyclerviewexinclass.databinding.FragmentMainScreenBinding
 
 class BlankFragment : Fragment() {
     override fun onCreateView(
@@ -17,7 +21,16 @@ class BlankFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+
+        val  binding : FragmentBlankBinding
+                = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_blank, container, false)
+
+        binding.buttonComment.setOnClickListener {
+            this.findNavController().navigate(R.id.action_itemLayoutFragment_to_listFragment)
+        }
+        return binding.root
+        //return inflater.inflate(R.layout.fragment_blank, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
