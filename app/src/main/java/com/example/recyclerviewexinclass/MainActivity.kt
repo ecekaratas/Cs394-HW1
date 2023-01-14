@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.navigation.NavController
@@ -16,6 +17,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.recyclerviewexinclass.authentication.CreateAccountFragment
+import com.example.recyclerviewexinclass.databinding.ActivityCompanyDetailBinding
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val binding : ActivityCompanyDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         return when(item.itemId){
             R.id.settings -> {
                 Toast.makeText(this,"Settings",Toast.LENGTH_LONG).show()
